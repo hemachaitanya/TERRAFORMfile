@@ -1,7 +1,8 @@
-TERRAFORM: terraform is a hashicroplanguage to extands plugins
+* TERRAFORM: terraform is a hashicroplanguage to extands plugins
 
 
-Terraform  init: to create background information
+### Terraform  init: 
+to create background information
 
 Terraform validate: to check our data syntax will be correct or not
 
@@ -14,7 +15,7 @@ Terraform apply: its createsome state file and create some work space
 Terraform apply -auto-approve: yes/no authentication not requaired
 
 Terraform apply -var ./values.tf:  to take variables and values will be 
-attached we cannot change our templet we use variable file
+ attached we cannot change our templet we use variable file
 
 Terraform plan -target=”resoure_type.resource_name”:  we want to create only one resource we use -target=resource_type&resourc_name
 
