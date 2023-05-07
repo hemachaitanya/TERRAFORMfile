@@ -1,11 +1,22 @@
 TERRAFORM: terraform is a hashicroplanguage to extands plugins
 
-terraform init:
-terraform fmt:
-terraform validate:
-terraform plan:
-terraform apply:
-terraform apply -auto-approve:
+
+Terraform  init: to create background information
+
+Terraform validate: to check our data syntax will be correct or not
+
+Terraform fmt: write the code  arrangement is in proper setting 
+
+Terraform plan: what we want to create information will we gives its give plan of output
+
+Terraform apply: its createsome state file and create some work space
+
+Terraform apply -auto-approve: yes/no authentication not requaired
+
+Terraform apply -var ./values.tf:  to take variables and values will be 
+attached we cannot change our templet we use variable file
+
+Terraform plan -target=”resoure_type.resource_name”:  we want to create only one resource we use -target=resource_type&resourc_name
 
 Assigning Values to Root Module Variables
 
