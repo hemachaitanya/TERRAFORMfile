@@ -1,5 +1,8 @@
-* TERRAFORM: terraform is a hashicroplanguage to extands plugins
-
+### TERRAFORM:
+ terraform is a hashicroplanguage to extands plugins
+ terraform is a multy cloud provider
+ tf used to building , changing and version of infrastructure safely  and efficiently .
+ it managing multycloud provider
 
 ### Terraform  init: 
 to create background information
@@ -57,3 +60,43 @@ How to remove resources from state file
 ### Terraform state rm <resourcetype>.<resourcename>
 
 ![images](./Images/1.png)
+
+### module tf
+
+ it' a terraform configuration files in a single directory when we want to run module from single directory is known as root module
+
+ ### 5 steps in terraoform
+
+ terraform init
+ terraform validate
+  terraform fmt
+ terraform apply
+terrarom plan
+terraform destroy
+
+### state file locking
+it's the statefile 
+to that it can prevents operations on statefile being performed by multiusers so once lock released from oneuser then it's cann't access by another user
+
+### remotebackend :
+
+ it's used to store terraform state remorte backend we use multicommands
+  terraform init,fmt,validate,plan,apply and destroy
+
+  ### taint resource
+
+  it's delete and recreate (you create local file and check)
+
+### resource graph
+
+it's created by using terraform graph 
+
+### terraform templet component
+
+    terraform provider: (where we want create infra)
+
+    terraform resource : (what we want to create)
+
+    argument: (nothing but input)
+
+    attribute:(nothing but output)
