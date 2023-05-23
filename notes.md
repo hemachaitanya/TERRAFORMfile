@@ -49,8 +49,8 @@ Terraform also automatically loads a number of variable definitions files if the
 
 ### Terraform import <resource_type>.<resource_name> <resoure_id>
 first we create sample tf file 
-![hema](./Images/3.png)
-![hema](./Images/2.png)
+![hema](./images/3.png)
+![hema](./images/2.png)
 
 
 
