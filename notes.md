@@ -56,13 +56,13 @@ first we create sample tf file
 
 Create more resources we apply only one resource 
 
-### Terraform apply/plan -target=”<resource_type>.<resource_name>” 
+### Terraform apply/plan/destroy -target=”<resource_type>.<resource_name>” 
 
 Create  two resources in two different folders by using modules(alias)
 
 How to remove resources from state file
 
-### Terraform state rm <resource_type>.<resource id>
+### Terraform state rm <resource_type>.<resource_id>
 
 ![images](./Images/1.png)
 
@@ -105,3 +105,12 @@ it's created by using terraform graph
     argument: (nothing but input)
 
     attribute:(nothing but output)
+
+## terraform backup
+
+when we destroy resource then only back up file will be created
+
+* after destroy  in state file data also deteted
+* we recreate state file data by using backup file by using below command
+
+    terraform apply -backup=<terraform backup_file_path>
