@@ -113,4 +113,4 @@ when we destroy resource then only back up file will be created
 * after destroy  in state file data also deteted
 * we recreate state file data by using backup file by using below command
 
-### terraform apply -backup=<terraform backup_file_path>
+### terraform apply -backup=<terraform_backup_file_path>
