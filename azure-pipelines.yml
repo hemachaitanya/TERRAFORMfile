@@ -7,16 +7,11 @@ trigger:
   - main
 
 steps:
-    
   - task: TerraformInstaller@1
     inputs:
       terraformVersion: 'latest'
-  - task: TerraformTaskV4@4
-    inputs:
-      provider: 'aws'
-      command: 'init'
-      workingDirectory: '$(System.DefaultWorkingDirectory)/workingDirectory: ''TERRAFORMfile\4-subnet-1-vpc\ec2-instance'''
-      backendServiceAWS: 'aws-terraform'
-      backendAWSBucketName: 'poorilu'
-      backendAWSKey: 'terrafrm'
+  - bash: terraform init
+    displayName: deploy vm
+    workingDirectory: 4-subnet-1-vpc\ec2-instance' 
+  
 
