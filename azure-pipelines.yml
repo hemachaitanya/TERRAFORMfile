@@ -7,26 +7,18 @@ trigger:
   - master
 
 steps:
+  - script: 
+    
   - task: TerraformInstaller@1
     inputs:
       terraformVersion: 'latest'
-  - task: TerraformTaskV4@4
-    inputs:
-      provider: 'aws'
-      command: 'init'
-      workingDirectory: 'TERRAFORMfile\4-subnet-1-vpc\ec2-instance'
-      backendServiceAWS: 'aws-terraform'
-      backendAWSBucketName: 'munakkayalu'
-      backendAWSKey: 'terraformdir'
-  
-  - task: TerraformTaskV4@4
-    inputs:
-      provider: 'aws'
-      command: 'plan'
-      workingDirectory: 'TERRAFORMfile\4-subnet-1-vpc\ec2-instance'
-      environmentServiceNameAWS: 'aws-terraform'
-  - task: TerraformTaskV4@4
-    inputs:
-      provider: 'aws'
-      command: 'plan'
-      environmentServiceNameAWS: 'aws-terraform'
+  -
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'aws'
+    command: 'init'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/workingDirectory: ''TERRAFORMfile\4-subnet-1-vpc\ec2-instance'''
+    backendServiceAWS: 'aws-terraform'
+    backendAWSBucketName: 'poorilu'
+    backendAWSKey: 'terrafrm'
+-
