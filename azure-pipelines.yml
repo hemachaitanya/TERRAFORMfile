@@ -12,6 +12,6 @@ steps:
       terraformVersion: 'latest'
   - bash: terraform init
     displayName: deploy vm
-    workingDirectory: 4-subnet-1-vpc\ec2-instance' 
+    workingDirectory: '*/4-subnet-1-vpc\ec2-instance' 
   
 
