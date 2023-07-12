@@ -1,8 +1,10 @@
 ### TERRAFORM:
  terraform is a hashicroplanguage to extands plugins
  terraform is a multy cloud provider
- tf used to building , changing and version of infrastructure safely  and efficiently .
+ tf used not only for low level  building , changing and version of infrastructure safely  and efficiently .
  it managing multycloud provider
+ Terraform  can  not  only  manage low-levelcomponents,  such  as compute  instances, storage,  and networking; it can also support high-level components, such as DNSand SaaS features, provided that the resource API is available from the providers.
+
 
 ### Terraform  init: 
 to create background information
@@ -88,6 +90,21 @@ to that it can prevents operations on statefile being performed by multiusers so
  it's used to store terraform state remorte backend we use multicommands
   terraform init,fmt,validate,plan,apply and destroy
 
+
+      terraform init -migrate-state
+
+       terraform init -reconfigure
+
+![hema](./Images/backend-1.png)
+
+![hema](./Images/backend1.png)
+
+## without remort backend same templet creates two times 
+
+![hema](./Images/with-out.png)
+
+![hema](./Images/without-2.png)
+
   ### taint resource
 
   it's delete and recreate (you create local file and check)
@@ -107,6 +124,10 @@ it's created by using terraform graph
     attribute:(nothing but output)
 
 ## terraform backup
+* when we create remort backup then its easy to remove statefiles we download from remort repo.
+* by using backup command also we re-gather statefile contents(resources)
+
+
 
 
 
